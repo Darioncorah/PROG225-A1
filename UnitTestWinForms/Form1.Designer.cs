@@ -39,6 +39,8 @@
             this.btnCheckThree = new System.Windows.Forms.Button();
             this.btnSum = new System.Windows.Forms.Button();
             this.lblSum = new System.Windows.Forms.Label();
+            this.btnForLoop = new System.Windows.Forms.Button();
+            this.lblForLoop = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOne
@@ -140,11 +142,31 @@
             this.lblSum.Size = new System.Drawing.Size(0, 13);
             this.lblSum.TabIndex = 10;
             // 
+            // btnForLoop
+            // 
+            this.btnForLoop.Location = new System.Drawing.Point(12, 128);
+            this.btnForLoop.Name = "btnForLoop";
+            this.btnForLoop.Size = new System.Drawing.Size(75, 23);
+            this.btnForLoop.TabIndex = 11;
+            this.btnForLoop.Text = "For Loop";
+            this.btnForLoop.UseVisualStyleBackColor = true;
+            this.btnForLoop.Click += new System.EventHandler(this.btnForLoop_Click);
+            // 
+            // lblForLoop
+            // 
+            this.lblForLoop.AutoSize = true;
+            this.lblForLoop.Location = new System.Drawing.Point(100, 133);
+            this.lblForLoop.Name = "lblForLoop";
+            this.lblForLoop.Size = new System.Drawing.Size(0, 13);
+            this.lblForLoop.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(572, 280);
+            this.Controls.Add(this.lblForLoop);
+            this.Controls.Add(this.btnForLoop);
             this.Controls.Add(this.lblSum);
             this.Controls.Add(this.btnSum);
             this.Controls.Add(this.btnCheckThree);
@@ -176,6 +198,8 @@
         private System.Windows.Forms.Button btnCheckThree;
         private System.Windows.Forms.Button btnSum;
         private System.Windows.Forms.Label lblSum;
+        private System.Windows.Forms.Button btnForLoop;
+        private System.Windows.Forms.Label lblForLoop;
     }
 }
 

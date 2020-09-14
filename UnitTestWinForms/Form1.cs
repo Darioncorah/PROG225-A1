@@ -78,11 +78,25 @@ namespace UnitTestWinForms
             {
                 btnCheckThree.BackColor = Color.Yellow;
             }
+            else
+            {
+                btnCheckThree.BackColor = Color.Green;
+            }
         }
 
         private void btnSum_Click(object sender, EventArgs e)
         {
             lblSum.Text = (Convert.ToInt32(txtThree.Text) + Convert.ToInt32(txtTwo.Text) + Convert.ToInt32(txtOne.Text)).ToString();
+        }
+
+        private void btnForLoop_Click(object sender, EventArgs e)
+        {
+            int intAddition = 0;
+            for (int i = 0; i <= 1000; i++)
+            {
+                intAddition += i;
+            }
+            lblForLoop.Text = intAddition.ToString();
         }
     }
 }
