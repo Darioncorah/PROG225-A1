@@ -45,5 +45,22 @@ namespace UnitTestWinForms
                 btnCheckOne.BackColor = Color.Green;
             }
         }
+
+        private void btnCheckTwo_Click(object sender, EventArgs e)
+        {
+            int i2 = Convert.ToInt32(txtTwo.Text);
+            if (i2 <= 1000)
+            {
+                btnCheckTwo.BackColor = Color.Red;
+            }
+            else if (i2 <= 2000 && i2 > 1000)
+            {
+                btnCheckTwo.BackColor = Color.Yellow;
+            }
+            else if (i2 <= 3000 && i2 > 2000)
+            {
+                btnCheckTwo.BackColor = Color.Green;
+            }
+        }
     }
 }
