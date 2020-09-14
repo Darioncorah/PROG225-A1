@@ -41,6 +41,8 @@
             this.lblSum = new System.Windows.Forms.Label();
             this.btnForLoop = new System.Windows.Forms.Button();
             this.lblForLoop = new System.Windows.Forms.Label();
+            this.lblWhileLoop = new System.Windows.Forms.Label();
+            this.btnWhileLoop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOne
@@ -160,11 +162,31 @@
             this.lblForLoop.Size = new System.Drawing.Size(0, 13);
             this.lblForLoop.TabIndex = 12;
             // 
+            // lblWhileLoop
+            // 
+            this.lblWhileLoop.AutoSize = true;
+            this.lblWhileLoop.Location = new System.Drawing.Point(100, 162);
+            this.lblWhileLoop.Name = "lblWhileLoop";
+            this.lblWhileLoop.Size = new System.Drawing.Size(0, 13);
+            this.lblWhileLoop.TabIndex = 14;
+            // 
+            // btnWhileLoop
+            // 
+            this.btnWhileLoop.Location = new System.Drawing.Point(12, 157);
+            this.btnWhileLoop.Name = "btnWhileLoop";
+            this.btnWhileLoop.Size = new System.Drawing.Size(75, 23);
+            this.btnWhileLoop.TabIndex = 13;
+            this.btnWhileLoop.Text = "While Loop";
+            this.btnWhileLoop.UseVisualStyleBackColor = true;
+            this.btnWhileLoop.Click += new System.EventHandler(this.btnWhileLoop_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(572, 280);
+            this.Controls.Add(this.lblWhileLoop);
+            this.Controls.Add(this.btnWhileLoop);
             this.Controls.Add(this.lblForLoop);
             this.Controls.Add(this.btnForLoop);
             this.Controls.Add(this.lblSum);
@@ -200,6 +222,8 @@
         private System.Windows.Forms.Label lblSum;
         private System.Windows.Forms.Button btnForLoop;
         private System.Windows.Forms.Label lblForLoop;
+        private System.Windows.Forms.Label lblWhileLoop;
+        private System.Windows.Forms.Button btnWhileLoop;
     }
 }
 

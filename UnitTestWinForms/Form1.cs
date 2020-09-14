@@ -98,5 +98,15 @@ namespace UnitTestWinForms
             }
             lblForLoop.Text = intAddition.ToString();
         }
+
+        private void btnWhileLoop_Click(object sender, EventArgs e)
+        {
+            int intWhile = 10000;
+            while (intWhile >= -100)
+            {
+                intWhile -= 101;
+            }
+            lblWhileLoop.Text = intWhile.ToString();
+        }
     }
 }
