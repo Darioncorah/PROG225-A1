@@ -79,5 +79,10 @@ namespace UnitTestWinForms
                 btnCheckThree.BackColor = Color.Yellow;
             }
         }
+
+        private void btnSum_Click(object sender, EventArgs e)
+        {
+            lblSum.Text = (Convert.ToInt32(txtThree.Text) + Convert.ToInt32(txtTwo.Text) + Convert.ToInt32(txtOne.Text)).ToString();
+        }
     }
 }
