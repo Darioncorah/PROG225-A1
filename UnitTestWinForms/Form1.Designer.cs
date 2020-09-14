@@ -34,6 +34,9 @@
             this.txtOne = new System.Windows.Forms.TextBox();
             this.txtTwo = new System.Windows.Forms.TextBox();
             this.txtThree = new System.Windows.Forms.TextBox();
+            this.btnCheckOne = new System.Windows.Forms.Button();
+            this.btnCheckTwo = new System.Windows.Forms.Button();
+            this.btnCheckThree = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOne
@@ -87,11 +90,42 @@
             this.txtThree.Size = new System.Drawing.Size(65, 20);
             this.txtThree.TabIndex = 5;
             // 
+            // btnCheckOne
+            // 
+            this.btnCheckOne.Location = new System.Drawing.Point(183, 11);
+            this.btnCheckOne.Name = "btnCheckOne";
+            this.btnCheckOne.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckOne.TabIndex = 6;
+            this.btnCheckOne.Text = "Check";
+            this.btnCheckOne.UseVisualStyleBackColor = true;
+            this.btnCheckOne.Click += new System.EventHandler(this.btnCheckOne_Click);
+            // 
+            // btnCheckTwo
+            // 
+            this.btnCheckTwo.Location = new System.Drawing.Point(183, 40);
+            this.btnCheckTwo.Name = "btnCheckTwo";
+            this.btnCheckTwo.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckTwo.TabIndex = 7;
+            this.btnCheckTwo.Text = "Check";
+            this.btnCheckTwo.UseVisualStyleBackColor = true;
+            // 
+            // btnCheckThree
+            // 
+            this.btnCheckThree.Location = new System.Drawing.Point(183, 70);
+            this.btnCheckThree.Name = "btnCheckThree";
+            this.btnCheckThree.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckThree.TabIndex = 8;
+            this.btnCheckThree.Text = "Check";
+            this.btnCheckThree.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(572, 280);
+            this.Controls.Add(this.btnCheckThree);
+            this.Controls.Add(this.btnCheckTwo);
+            this.Controls.Add(this.btnCheckOne);
             this.Controls.Add(this.txtThree);
             this.Controls.Add(this.txtTwo);
             this.Controls.Add(this.txtOne);
@@ -113,6 +147,9 @@
         private System.Windows.Forms.TextBox txtOne;
         private System.Windows.Forms.TextBox txtTwo;
         private System.Windows.Forms.TextBox txtThree;
+        private System.Windows.Forms.Button btnCheckOne;
+        private System.Windows.Forms.Button btnCheckTwo;
+        private System.Windows.Forms.Button btnCheckThree;
     }
 }
 
